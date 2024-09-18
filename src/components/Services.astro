@@ -5,10 +5,20 @@ import servicesData from './Data/services.json';
 ---
 <Container>
 <div class="relative flex flex-col items-center md:flex-row" id="services">
-    <Topic title="Our Services" description="Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation">
+    <!--<Topic title="Our Services" description="Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation">-->
+        <Topic title="Prevent Cash Leakage" description="82% of businesses worldwide experience cash leakage, and your business could be one of them"></Topic>
 </div>
 
-<div class="flex-row items-center py-5">
+<div class="flex gap-10 py-25">
+    <img src="/services/cashleakimage2.png" class="w-[350px] h-auto" alt="cash leakage reasons">
+    <div class="flex-col justify-center items-center gap-[40px] inline-flex">
+        <p class="flex justify-center items-start text-3xl">The things that go unnoticed can quickly turn into financial drains</p>
+        <p class="flex justify-center items-start text-2xl">By capturing expenses at their sources using the power of AI, Xpensea helps you prevent costly errors, streamline approvals, and gain real-time insights into employee spending.</p>
+    </div>
+    
+</div>
+
+<div class="flex-row items-center py-10">
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
 
         <!-- card start-->
@@ -17,10 +27,10 @@ import servicesData from './Data/services.json';
         <div class={background}>
             <div class="flex-col justify-center items-start gap-[93px] inline-flex">
                 <div class="flex-col justify-start items-start flex">
-                    <div class="px-[7px] bg-lime-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
+                    <div class="px-[7px] bg-yellow-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
                         <div class=" text-3xl font-medium">{name1}</div>
                     </div>
-                    <div class="px-[7px] bg-lime-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
+                    <div class="px-[7px] bg-yellow-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
                         <div class="text-3xl font-medium">{name2}</div>
                     </div>
                 </div>
@@ -40,20 +50,21 @@ import servicesData from './Data/services.json';
         <!-- card end-->
     </div>
 </div>
-
-<div class="flex-row items-center my-6 p-14 bg-zinc-100 rounded-[45px]">
+<!--bg-[url('/services/extrabg.png')] bg-cover opacity-90 bg-bottom bg-no-repeat w-full h-auto -->
+<div class="flex-row items-center my-6 p-14  rounded-[45px] bg-zinc-200">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="justify-start items-center gap-[275px] flex">
-            <div class="flex-col justify-start items-start gap-[26px] inline-flex text-black">
-                <div class="text-3xl font-medium">Let’s make things happen</div>
-                <div class="text-lg font-normal">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</div>
-                <a href="/" class="px-[35px] py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-[14px] justify-start items-start gap-2.5 inline-flex">
-                    <div class="text-center text-xl font-normal leading-7">Get your free proposal</div>
+            <div class="flex-col justify-start items-start gap-[26px] inline-flex text-black opacity-100">
+                <div class="text-4xl font-bold">Xpensea can help you save and earn more</div>
+                <div class="text-lg font-normal ">By helping businesses prevent financial loss, Xpensea makes sure your spend is under control, avoiding unnecessary cash leakage.</div>
+                <a href="/" class="px-[35px] py-5 bg-blue hover:bg-white text-white hover:text-black border hover:border-black rounded-[14px] justify-start items-start gap-2.5 inline-flex">
+                    <div class="text-center text-xl font-medium leading-7">Watch how Xpensea works</div>
                 </a>
             </div>
         </div>
-        <div class="hidden md:grid justify-items-center -m-20">
-            <img src="/services/Illustration.svg" width="50%" alt="cat"/>
+        <!--hidden md:grid -->
+        <div class="flex justify-center items-bottom bg-[url('/services/extrabg2.png')] bg-cover opacity-90 bg-bottom bg-no-repeat w-full h-auto rounded-sm"> 
+            <img src="/services/additional.png" class="bg-cover" alt="cat"/>
         </div>
     </div>
 </div>

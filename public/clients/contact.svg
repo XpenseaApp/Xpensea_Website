@@ -3,10 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 367.1 649" style="enable-background:new 0 0 367.1 649;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;filter:url(#Adobe_OpacityMaskFilter);}
-	
-		.st1{mask:url(#path-1-outside-1_341_618_00000005974524879395838240000011496076637815834275_);fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:#B9FF66;}
+	.st0{fill:#62B0FE;filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{mask:url(#path-1-outside-1_341_618_00000005974524879395838240000011496076637815834275_);fill:#62B0FE;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#0080FF;}
 	.st3{fill:#191A23;}
 </style>
 <defs>

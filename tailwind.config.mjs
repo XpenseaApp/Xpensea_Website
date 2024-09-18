@@ -15,6 +15,9 @@ export default {
 		white: "#FFFFFF",
 		gray: "#0D0C22",
 		stone: "#231F20",
+		yellow: '#FFC806',
+		blue: "#0080FF",
+		light_blue: "#62B0FE",
 		lime: "#B9FF66",
 		zinc: {
 		  100: "#F3F3F3",
