@@ -3,7 +3,7 @@ import Container from "./Container.astro"
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  { href: '/about', label: 'About us' },
+  // { href: '/about', label: 'About us' },
   { href: '/#services', label: 'Features' },
   { href: '/pricing', label: 'Pricing' },
   // { href: '/', label: 'Blog'},
@@ -22,8 +22,7 @@ const navButton = { href: '/#', label: 'Request For Demo' };
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <!--<img src="/Logo.svg" class="h-8" alt="Logo" /> -->
-          <img src="/Xpensea.png" class="h-15" alt="Logo" />
+          <img src="/Xpensea.png" class="h-12" alt="Logo" />
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-8 h-8 text-black" />
