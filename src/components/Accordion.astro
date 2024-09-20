@@ -12,49 +12,55 @@ const { index, title, description, pic, steps } = Astro.props;
 
 <div
   id="accordion__item"
-  class="accordion__item group h-[160px] bg-zinc-100 overflow-hidden w-full transition-all duration-500 mb-[30px] rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"
+  class="accordion__item group h-auto md:h-[160px] bg-zinc-100 overflow-hidden w-full transition-all duration-500 mb-[30px] rounded-[45px] border border-dark shadow-[0px_5px_0px_#191a23]"
 >
   <button
-    class="accordion__toggle w-full h-[160px] flex items-center justify-between p-[60px] cursor-pointer"
+    class="accordion__toggle w-full h-auto md:h-[160px] flex flex-col md:flex-row items-center justify-between p-5 md:p-[60px] cursor-pointer"
     id={`${title} accordion__item menu button`}
     aria-expanded="false"
     aria-controls={`${title} accordion__item menu content`}
   > 
-    <div class="flex items-center gap-[25px]">
-      <span class="hidden sm:block sm:text-6xl">0{index}</span>
-      <div class="text-2xl font-bold">{title}</div>
+    <!-- Title and Index -->
+    <div class="flex flex-col md:flex-row items-center gap-5 md:gap-[25px]">
+      <span class="text-4xl sm:text-6xl hidden sm:block">0{index}</span>
+      <div class="text-xl md:text-2xl font-bold text-center md:text-left">{title}</div>
     </div>
+
+    <!-- Accordion Icon -->
     <div
-      class="bg-white w-[58px] h-[58px] flex justify-center items-center rounded-full border border-dark"
+      class="bg-white w-12 md:w-[58px] h-12 md:h-[58px] flex justify-center items-center rounded-full border border-dark mt-4 md:mt-0"
     >
       <div
-        class="accordion__icon h-10 w-10 transition-transform duration-300 flex justify-center items-center relative"
+        class="accordion__icon h-8 md:h-10 w-8 md:w-10 transition-transform duration-300 flex justify-center items-center"
         aria-hidden="true"
       >
       </div>
     </div>
   </button>
+
+  <!-- Accordion Content -->
   <div
     id={`${title} accordion__item menu content`}
-    aria-labelledby={`${title} accordion__item menu button `}
-    class="accordion__content px-[60px]"
+    aria-labelledby={`${title} accordion__item menu button`}
+    class="accordion__content px-5 md:px-[60px] pt-5 md:pt-0"
   >
-    <!-- <div class="w-full h-[2px] bg-black"></div> -->
-    
-    <div class="flex items-center justify-bottom gap-[40px]">
-      
-      <div class="w-50% items-bottom justify-bottom"><img src={pic} alt={pic}/></div>
-      <div class="flex-col justify-center items-center inline-flex gap-[30px] border rounded-xl px-5 py-8 my-5 bg-zinc-100">
-        <!-- <p class="prose mb-4 mt-1 max-w-full pt-5 pb-[10px] transition-[height]"> -->
-        <!--<p class="prose mb-4 pb-[20px] transition-[height]"></p> -->
-          <div class="text-xl font-medium">{description}</div>
-        </p>
-        <div class="flex justify-center items-center w-[450px] h-[auto]"><img src={steps} alt={steps}></div>
+    <div class="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-[40px]">
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img src={pic} alt={pic} class="w-[90%] md:w-auto h-auto" />
       </div>
-      
+
+      <!-- Description and Steps Section -->
+      <div class="flex flex-col justify-center items-center w-full md:w-1/2 gap-4 md:gap-[30px] border rounded-xl px-4 py-6 md:px-5 md:py-8 my-5 bg-zinc-100">
+        <div class="text-lg md:text-xl font-medium text-center md:text-left">{description}</div>
+        <div class="flex justify-center items-center w-full md:w-[450px]">
+          <img src={steps} alt={steps} class="w-[90%] md:w-auto h-auto" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
 <script>
   function accordionSetup() {
     const accordionItems = document.querySelectorAll(
