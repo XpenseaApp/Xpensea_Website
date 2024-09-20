@@ -4,19 +4,25 @@ import Topic from "./Topic.astro";
 import servicesData from './Data/services.json';
 ---
 <Container>
-<div class="relative flex flex-col items-center md:flex-row" id="services">
-    <!--<Topic title="Our Services" description="Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation">-->
+    <div class="relative flex flex-col items-center md:flex-row" id="services">
         <Topic title="Prevent Cash Leakage" description="82% of businesses worldwide experience cash leakage, and your business could be one of them"></Topic>
-</div>
-
-<div class="flex gap-10 py-25">
-    <img src="/services/cashleakimage2.png" class="w-[350px] h-auto" alt="cash leakage reasons">
-    <div class="flex-col justify-center items-center gap-[40px] inline-flex">
-        <p class="flex justify-center items-start text-3xl">The things that go unnoticed can quickly turn into financial drains</p>
-        <p class="flex justify-center items-start text-2xl">By capturing expenses at their sources using the power of AI, Xpensea helps you prevent costly errors, streamline approvals, and gain real-time insights into employee spending.</p>
     </div>
     
-</div>
+    <div class="flex flex-col md:flex-row gap-6 md:gap-10 py-6 items-center">
+        <!-- Image Section -->
+        <img src="/services/cashleakimage2.png" class="w-[80%] md:w-[350px] h-auto" alt="cash leakage reasons">
+    
+        <!-- Text Section -->
+        <div class="flex flex-col justify-center items-center md:items-start gap-6 px-4 md:px-0">
+            <p class="text-lg md:text-3xl text-center md:text-left">
+                The things that go unnoticed can quickly turn into financial drains
+            </p>
+            <p class="text-base md:text-2xl text-center md:text-left">
+                By capturing expenses at their sources using the power of AI, Xpensea helps you prevent costly errors, streamline approvals, and gain real-time insights into employee spending.
+            </p>
+        </div>
+    </div>
+    
 
 <div class="flex-row items-center py-10">
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
@@ -69,3 +75,65 @@ import servicesData from './Data/services.json';
     </div>
 </div>
 </Container>
+
+
+// import Container from "./Container.astro"
+// import Topic from "./Topic.astro";
+// import servicesData from './Data/services.json';
+// ---
+// <Container>
+//   <!-- Services Section -->
+//   <div class="relative flex flex-col items-center md:flex-row" id="services">
+//     <Topic title="Prevent Cash Leakage" description="82% of businesses worldwide experience cash leakage, and your business could be one of them"></Topic>
+//   </div>
+
+//   <!-- Content Section -->
+//   <div class="flex flex-col md:flex-row gap-10 py-10 items-center">
+//     <img src="/services/cashleakimage2.png" class="w-[80%] md:w-[350px] h-auto" alt="cash leakage reasons">
+//     <div class="flex-col justify-center items-center gap-5 inline-flex px-5 md:px-0">
+//       <p class="text-center md:text-left text-lg md:text-3xl">The things that go unnoticed can quickly turn into financial drains</p>
+//       <p class="text-center md:text-left text-base md:text-2xl">By capturing expenses at their sources using the power of AI, Xpensea helps you prevent costly errors, streamline approvals, and gain real-time insights into employee spending.</p>
+//     </div>
+//   </div>
+
+//   <!-- Services Cards Section -->
+//   <div class="flex flex-col items-center py-10">
+//     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+//       <!-- Service Cards Loop -->
+//       {
+//       servicesData.map(({ background, name1, name2, arrow, link, image }) => (
+//       <div class={`p-6 rounded-lg ${background}`}>
+//         <div class="flex flex-col gap-6">
+//           <div class="flex flex-col gap-2">
+//             <div class="px-3 py-2 bg-yellow-300 rounded-md text-xl font-medium">{name1}</div>
+//             <div class="px-3 py-2 bg-yellow-300 rounded-md text-xl font-medium">{name2}</div>
+//           </div>
+//           <a href={link} class="flex items-center gap-3 text-lg text-blue-600">
+//             <img src={arrow} alt="arrow icon" class="w-10 h-10">
+//             <span>Learn more</span>
+//           </a>
+//         </div>
+//         <div class="hidden md:flex justify-center items-center mt-4">
+//           <img src={image} class="w-[210px] h-[170px]" alt="service image">
+//         </div>
+//       </div>
+//       ))
+//       }
+//     </div>
+//   </div>
+
+//   <!-- Additional Information Section -->
+//   <div class="flex flex-col md:flex-row items-center gap-10 p-14 rounded-[45px] bg-zinc-200 my-6">
+//     <div class="flex flex-col gap-6 text-black opacity-100">
+//       <h2 class="text-2xl md:text-4xl font-bold">Xpensea can help you save and earn more</h2>
+//       <p class="text-base md:text-lg font-normal">By helping businesses prevent financial loss, Xpensea makes sure your spend is under control, avoiding unnecessary cash leakage.</p>
+//       <a href="/" class="px-8 py-4 bg-blue-500 hover:bg-white text-white hover:text-black border hover:border-black rounded-lg text-lg font-medium">
+//         Watch how Xpensea works
+//       </a>
+//     </div>
+//     <!-- Additional Image -->
+//     <div class="flex justify-center items-center w-full md:w-auto">
+//       <img src="/services/additional.png" alt="additional image" class="w-[80%] md:w-auto rounded-md bg-cover bg-[url('/services/extrabg2.png')] bg-no-repeat bg-bottom opacity-90">
+//     </div>
+//   </div>
+// </Container>
