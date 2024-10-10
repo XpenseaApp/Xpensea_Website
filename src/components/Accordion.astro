@@ -39,10 +39,10 @@ const { index, title, description, pic, steps } = Astro.props;
     aria-labelledby={`${title} accordion__item menu button`}
     class="accordion__content px-5 md:px-[60px] pt-5 md:pt-0"
   >
-    <div class="flex flex-col md:flex-row items-center justify-bottom gap-5 md:gap-[40px]">
+    <div class="flex flex-col md:flex-row items-center justify-bottom gap-5 md:gap-[20px]">
       <!-- Image Section -->
-      <div class="flex w-full md:w-1/2 items-center justify-center">
-        <img src={pic} alt={pic} class="w-full md:w-1/2"/>
+      <div class="flex h-full md:h-[auto] items-center justify-center">
+        <img src={pic} alt={pic} class="flex w-full md:w-[auto]"/>
       </div>
 
       <!-- Description and Steps Section -->

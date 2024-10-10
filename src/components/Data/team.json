@@ -27,35 +27,35 @@
     "process":
     [
         {
-            "stepImage": "/team/step1image.png",
+            "stepImage": "/team/Nstep1image.png",
             "index": 1,
             "label": "Capture expense receipts through mobile app",
-            "content": "Capture or upload the expense receipt through the mobile app. Our AI model will analyze the bill for its authenticity, accuracy, completeness, relevance, and other metrics. This generates an AI score for further processes.",
+            "content": "Capture expense receipts through the mobile app. Our AI model will analyze the bill for its authenticity, accuracy, completeness, and other metrics. This generates an AI score for further processes.",
             "detailImage": "/team/step1.png"
         },
         {
-            "stepImage": "/team/step2image.png",
+            "stepImage": "/team/Nstep2image.png",
             "index": 2,
             "label": "Create and manage expense reports",
             "content": "Reports can be created by mapping the appropriate expenses. Reports can be regular or event based. The user can edit draft reports before finally submitting for approval.",
             "detailImage": "/team/step2.png"
         },
         {
-            "stepImage": "/team/step3image.png",
+            "stepImage": "/team/Nstep3image.png",
             "index": 3,
             "label": "Submit reports for approval",
             "content": "Reports can be created by mapping the appropriate expenses. Reports can be regular or event based. The user can edit draft reports before finally submitting for approval.",
             "detailImage": "/team/step3.png"
         },
         {
-            "stepImage": "/team/step4image.png",
+            "stepImage": "/team/Nstep4image.png",
             "index": 4,
             "label": "Approve expenses with AI score assistance",
             "content": "Reports can be created by mapping the appropriate expenses. Reports can be regular or event based. The user can edit draft reports before finally submitting for approval.",
             "detailImage": "/team/step4.png"
         },
         {
-            "stepImage": "/team/step5image.png",
+            "stepImage": "/team/Nstep5image.png",
             "index": 5,
             "label": "Track and handle report finances ",
             "content": "Reports can be created by mapping the appropriate expenses. Reports can be regular or event based. The user can edit draft reports before finally submitting for approval.",
